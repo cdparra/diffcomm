@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<voter xmlns='[voter-uri]'>
+ <id>[voter identifier]</id>
+ <name>[voter name]</name>
+ <hindex>[voter h-index]</hindex>
+ <gindex>[voter g-index]</gindex>
+ <totcitations>[total number of citations]</totcitations>
+ 
+ <!-- 
+ <membership-voter-list>
+ 	<membership-voter-ref>
+ 		<link href="[membership-uri]" />
+ 	</membership-voter-ref>
+ </membership-voter-list>
+  -->
+  
+</voter>

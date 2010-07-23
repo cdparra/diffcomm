@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<candidate xmlns='[candidate-uri]'>
+ <id>[candidate identifier]</id>
+ <name>[candidate name]</name>
+ <hindex>[candidate h-index]</hindex>
+ <gindex>[candidate g-index]</gindex>
+ <totcitations>[total number of citations]</totcitations>
+ 
+ <!-- 
+ <membership-candidate-list>
+ 	<membership-candidate-ref>
+ 		<link href="[membership-uri]" />
+ 	</membership-candidate-ref>
+ </membership-candidate-list>
+  -->
+   
+</candidate>
