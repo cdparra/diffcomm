@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<opinion xmlns='[opinion-uri]'>
+ <id>[opinion identifier]</id>
+ <name>[opinion name]</name>
+ 
+ <voter-ref>
+	<link href="[voter-uri]">[voter-name]</link>
+ </voter-ref>
+ 
+ <candidate-ref>
+	<link href="[candidate-uri]">[candidate-name]</link>
+ </candidate-ref>
+ 
+ <vote>[voter's opinion]</vote>
+</opinion>
