@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<community xmlns='[community-uri]'>
- <id>[community identifier]</id>
- <name>[community name]</name>
- <description>[community description]</description>
- <members>[number of members]</members>
-</community>
