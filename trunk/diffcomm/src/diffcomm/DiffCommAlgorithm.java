@@ -28,7 +28,7 @@ import jsc.datastructures.PairedData;
 
 public class DiffCommAlgorithm {
 
-	public static String path = "data/ICWE_ICPS/";
+	public static String path = "data/ICWE_ICPS2/";
 	
 	public static void main(String[] args) {
 
