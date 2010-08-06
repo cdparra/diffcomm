@@ -28,6 +28,8 @@ import jsc.datastructures.PairedData;
 
 public class DiffCommAlgorithm {
 
+	public static String path = "data/ICWE_ICPS/";
+	
 	public static void main(String[] args) {
 
 		// Recupero i Voters
@@ -109,13 +111,13 @@ public class DiffCommAlgorithm {
 
 		System.out.println("____________");
 		
-		writeToFile("data/Result.csv",communityOpinions);
+		writeToFile(path + "Result.csv",communityOpinions);
 	}
 	
 	// Recupera i vari voters dal file Voters.csv e li inserisce in una HashMap
 	public static void readVoters(HashMap<String, Voter> x) {
 		try {
-			FileReader fr = new FileReader("data/Voter.csv");
+			FileReader fr = new FileReader(path + "Voter.csv");
 
 			BufferedReader br = new BufferedReader(fr);
 
@@ -147,9 +149,8 @@ public class DiffCommAlgorithm {
 
 	// Setta la community e il numero di pubblicazioni per il voter preso in input
 	public static void setVoter(Voter v) {
-		File file = new File("data/VoterMembership.csv");
-		DataContext dataContext = DataContextFactory.createCsvDataContext(file,
-				true);
+		File file = new File(path + "VoterMembership.csv");
+		DataContext dataContext = DataContextFactory.createCsvDataContext(file,true);
 
 		Table table = dataContext.getDefaultSchema().getTables()[0];
 
@@ -194,7 +195,7 @@ public class DiffCommAlgorithm {
 
 	public static void readOpinions(HashMap<String, Voter> x, HashMap<String, Community> community_op) {
 		try {
-			FileReader fr = new FileReader("data/Opinions.csv");
+			FileReader fr = new FileReader(path + "Opinions.csv");
 
 			BufferedReader br = new BufferedReader(fr);
 
@@ -253,7 +254,7 @@ public class DiffCommAlgorithm {
 	public static int getCandidatesNumber() {
 		int candidates = 0;
 		try {
-			FileReader fr = new FileReader("data/Candidates.csv");
+			FileReader fr = new FileReader(path + "Candidates.csv");
 
 			BufferedReader br = new BufferedReader(fr);
 
@@ -284,7 +285,7 @@ public class DiffCommAlgorithm {
 
 	public static void readCommunities(HashMap<String, String> x) {
 		try {
-			FileReader fr = new FileReader("data/Communities.csv");
+			FileReader fr = new FileReader(path + "Communities.csv");
 
 			BufferedReader br = new BufferedReader(fr);
 
