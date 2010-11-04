@@ -1,5 +1,13 @@
 package diffcomm;
 
+// Contiene il nome della comunitˆ scientifica e l'array con i voti
+// ricavati facendo la media ponderata delle diverse opinioni dei 
+// voters appartenenti a questa comunitˆ
+
+// Contains the name of the scientific community and the array with the votes
+// obtained by the weighted average of the opinions of various
+// voters belonging to this community
+
 public class CommunityOpinion implements Comparable<CommunityOpinion>{
 	
 	public String community;
