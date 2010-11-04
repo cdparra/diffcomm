@@ -163,8 +163,6 @@ public class DiffCommAlgorithm {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
-
-		System.out.println("----- FINE readVoters() -----");
 	}
 
 	
@@ -322,7 +320,6 @@ public class DiffCommAlgorithm {
 			ioe.printStackTrace();
 		}
 
-		System.out.println("----- FINE readCommunities() -----");
 	}
 	
 	
