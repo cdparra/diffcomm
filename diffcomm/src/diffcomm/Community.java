@@ -1,5 +1,11 @@
 package diffcomm;
 
+// Contiene il nome della comunitˆ scientifica e l'arrayList con 
+// le opinioni dei voters che appartengono a questa comunitˆ
+
+// Contains the name of the scientific community and the arrayList 
+// with the opinions of various voters that belong to this community
+
 import java.util.ArrayList;
 
 public class Community {

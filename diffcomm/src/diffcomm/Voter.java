@@ -1,13 +1,17 @@
 package diffcomm;
 
+// Contiene l'id, il nome del voter, la lista delle comunitˆ scientifiche e
+// del numero di pubblicazioni in quella determinata comunitˆ
+
+// Contains the id, the name of the voter, the list of the scientific community and 
+// the list of numbers of pubblications for each community that belongs
+
 import java.util.ArrayList;
 
 public class Voter {
 	
 	public int id;
 	public String name;
-//	public String community;
-//	public int number_of_pubblications;
 	public ArrayList<String> community;
 	public ArrayList<Integer> number_of_pubblications;
 	
@@ -52,23 +56,5 @@ public class Voter {
 			ArrayList<Integer> number_of_pubblications) {
 		this.number_of_pubblications = number_of_pubblications;
 	}
-
-
-
-//	public String getCommunity() {
-//		return community;
-//	}
-//
-//	public void setCommunity(String community) {
-//		this.community = community;
-//	}
-//
-//	public int getNumber_of_pubblications() {
-//		return number_of_pubblications;
-//	}
-//
-//	public void setNumber_of_pubblications(int number_of_pubblications) {
-//		this.number_of_pubblications = number_of_pubblications;
-//	}
 	
 }
