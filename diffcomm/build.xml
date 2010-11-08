@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project name="DiffCommAlgorithm" basedir="." default="help" xmlns:artifact="urn:maven-artifact-ant">
+	<property name="plugin.name" value="Diffcomm" />
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="target" />
+	<property name="dist.dir" value="dist" />
+
+	<target name="help">
+		<echo message="" />
+		<echo message="${plugin.name} build file" />
+		<echo message="-----------------------------------" />
+		<echo message="" />
+		<echo message="Available targets are:" />
+		<echo message="" />
+		<echo message="compile      --> Compile all Java files" />
+		<echo message="clean        --> Deletes compiled classes and JAR" />
+		<echo message="dist         --> Generates the distribition plugin" />
+	</target>
+
+	<target name="compile" description="Compile main source tree java files">
+		<mkdir dir="${build.dir}/classes" />
+		<javac destdir="${build.dir}/classes" debug="true" optimize="false" deprecation="false" failonerror="true" source="1.5" target="1.5">
+			<src path="${src.dir}" />
+			<classpath>
+				<fileset dir="lib" includes="*.jar" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="dist" depends="compile" description="Packages app as WAR">
+		<jar destfile="${dist.dir}/${plugin.name}.jar" basedir="${build.dir}/classes" includes="**">
+			<archives>
+				<zips>
+					<fileset dir="lib" includes="*.jar" />
+				</zips>
+			</archives>
+			<manifest>
+				<attribute name="Main-Class" value="diffcomm.DiffCommAlgorithm" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="clean" description="Clean output directories">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+
+</project>

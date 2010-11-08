@@ -29,11 +29,14 @@ import jsc.datastructures.PairedData;
 
 public class DiffCommAlgorithm {
 
-	public static String folder = "ICWE_ICPS_BPM";
-	
-	public static String path = "data/" + folder + "/";
+	public static String path = null;
 	
 	public static void main(String[] args) {
+		
+		for (int i = 0; i < args.length; i++) {
+            //System.out.println(args[i]);
+            path = args[i];
+		}
 
 		// Sets the voters
 		HashMap<String, Voter> voters = new HashMap<String, Voter>();
@@ -395,6 +398,9 @@ public class DiffCommAlgorithm {
 			} catch (IOException ex) {
 				ex.printStackTrace();
 			}
+			
+			System.out.println(" ");
+			System.out.println("The document Result.csv has been created at " + path);
 		}
 	}
 }
