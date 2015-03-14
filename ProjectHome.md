@@ -1,0 +1,1 @@
+This project is an implementation of a new algorithm that discover and mesure the differences between scientifc communities opinions.
